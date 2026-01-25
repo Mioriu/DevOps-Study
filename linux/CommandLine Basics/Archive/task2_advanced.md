@@ -38,24 +38,24 @@ echo "Log started" > logs/app.log
 (далее ваш полный список команд)
 
 # Решение
-mkdir compression_advanced && cd compression_advanced 
-mkdir logs && echo "text1" >> ./logs/app.log && echo "error1" >> ./logs/error.log
-mkdir configs && echo "appConf" >> ./configs/app.conf && echo "dbConf" >> ./configs/db.conf
-echo "# Мои заметки" >> notes.md
-gzip -1 notes.md
-du -sh notes.md.gz
-gunzip notes.md.gz && gzip -9 notes.md
-du -sh notes.md.gz
-zip -r configs_backup.zip configs/
-rm -rf configs
-unzip configs_backup.zip configs/db.conf
-ls -l configs
-tar -cjvf logs_backup.tar.bz2 logs/
-tar -tf logs_backup.tar.bz2
-rm -rf logs
-tar -xvf logs_backup.tar.bz2 logs/error.log
-ls -l logs
-cp notes.md notes_copy.md
-xz notes_copy.md -k
-ls -l
-unxz notes_copy.md.xz
+- mkdir compression_advanced && cd compression_advanced 
+- mkdir logs && echo "text1" >> ./logs/app.log && echo "error1" >> ./logs/error.log
+- mkdir configs && echo "appConf" >> ./configs/app.conf && echo "dbConf" >> ./configs/db.conf
+- echo "# Мои заметки" >> notes.md
+- gzip -1 notes.md
+- du -sh notes.md.gz
+- gunzip notes.md.gz && gzip -9 notes.md
+- du -sh notes.md.gz
+- zip -r configs_backup.zip configs/
+- rm -rf configs
+- unzip configs_backup.zip configs/db.conf
+- ls -l configs
+- tar -cjvf logs_backup.tar.bz2 logs/
+- tar -tf logs_backup.tar.bz2
+- rm -rf logs
+- tar -xvf logs_backup.tar.bz2 logs/error.log
+- ls -l logs
+- cp notes.md notes_copy.md
+- xz notes_copy.md -k
+- ls -l
+- unxz notes_copy.md.xz
