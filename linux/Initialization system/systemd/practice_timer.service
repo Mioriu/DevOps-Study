@@ -1,0 +1,11 @@
+[Unit]
+Description=Write date in $HOME/practice_timer.log every 2 minutes
+
+[Service]
+Type=simple
+ExecStart=/home/myusr/practice_timer.sh
+Restart=on-failure
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Running practice_timer.service every 2 minutes
+
+[Timer]
+OnCalendar=*-*-* *:*:00/2
+Unit=practice_timer.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
